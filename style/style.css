@@ -1,0 +1,119 @@
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html, body {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	font-family: helvetica, sans-serif;
+	font-size: 14px;
+	-webkit-overflow-scrolling: touch;
+}
+
+body {
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.loader {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(149,149,149,0.25)), color-stop(26%,rgba(13,13,13,0.82)), color-stop(34%,rgba(9,9,9,1)), color-stop(50%,rgba(1,1,1,1)), color-stop(51%,rgba(1,1,1,1)), color-stop(66%,rgba(6,6,6,1)), color-stop(78%,rgba(10,10,10,0.74)), color-stop(100%,rgba(27,27,27,0.25))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(149,149,149,0.25) 0%,rgba(13,13,13,0.82) 26%,rgba(9,9,9,1) 34%,rgba(1,1,1,1) 50%,rgba(1,1,1,1) 51%,rgba(6,6,6,1) 66%,rgba(10,10,10,0.74) 78%,rgba(27,27,27,0.25) 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(to bottom, rgba(149,149,149,0.25) 0%,rgba(13,13,13,0.82) 26%,rgba(9,9,9,1) 34%,rgba(1,1,1,1) 50%,rgba(1,1,1,1) 51%,rgba(6,6,6,1) 66%,rgba(10,10,10,0.74) 78%,rgba(27,27,27,0.25) 100%); /* W3C */
+}
+
+.loading .loader {
+	display: block;
+}
+
+.loader > .spinner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -32px;
+	margin-left: -32px;
+	background: url(loader.gif) 0px 0px no-repeat;
+	background-size: 64px 64px;
+	width: 64px;
+	height: 64px;
+}
+
+.screen {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	text-align: center;
+}
+
+.loading_text {
+	top: 50%;
+	margin-top: -20px;
+	position: absolute;
+	width: 100%;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.title_questions {
+	width: 100%;
+	height: auto;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.button_details {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	position: relative;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+	width: 40%;
+	height: auto;
+	margin-left: 30%;
+	margin-top: 10px;
+}
+
+.button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	top: 50%;
+	margin-top: -25px;
+	position: relative;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+	display: none;
+	width: 40%;
+	height: auto;
+	margin-left: 30%;
+}
+
+.red_btn {
+	background-color: #f44336;
+}/* Red */
+
+.question {
+	border: 1px solid #000000;
+	padding: 20px;
+	width: 80%;
+	margin: 10px auto;
+}
+

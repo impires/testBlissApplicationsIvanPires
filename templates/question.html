@@ -1,0 +1,17 @@
+<div class="question">
+	<div class="image"><img src="<%=image %>" /></div>
+	<div class="text"><%=text %></div>
+	<ul>
+		<li><%=opt1 %></li>
+		<li><%=opt2 %></li>
+		<li><%=opt3 %></li>
+		<li><%=opt4 %></li>
+	</ul>
+	<% if(btnDetails) { %>
+		<div id="details_btn" class="button_details">View Details</div>
+	<% } %>
+	<% if(btnShare) { %>
+		<div id="share_btn" class="button_details">Share</div>
+		<div id="back_btn" class="button_details">Back to List</div>
+	<% } %>
+</div>
